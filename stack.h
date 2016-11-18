@@ -10,6 +10,7 @@ typedef struct Stack Stack;
 
 // functions 
 // note the absence of reference
+void stack_init(Stack* stk);
 bool stack_empty(Stack* stk);
 int stack_size(Stack* stk);
 

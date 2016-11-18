@@ -19,3 +19,4 @@ ARRAY_TYPE* array_ptr_at(Array* arr);
 bool array_empty(Array* arr);
 int array_size(Array* arr);
 int array_max_size(Array* arr);
+int array_init(Array* arr);

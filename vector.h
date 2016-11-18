@@ -17,6 +17,9 @@ vector->data[]
 
 // functions 
 // note the absence of reference
+
+void vector_init(Vector* vec);
+void vector_clear(Vector* vec);
 VECTOR_TYPE* vector_ptr_at(Vector* vec);
 bool vector_empty(Vector* vec);
 int vector_size(Vector* vec);
@@ -38,6 +41,7 @@ void vector_clear(Vector* vec);
 // =>   a, b, c, ...,m, value, where, n, ...
 // 'where' could be end()
 void vector_insert(Vector* vec, int where, VECTOR_TYPE value);
+void vector_erase(Vector* vec, int where, VECTOR_TYPE value);
 
 void vector_erase(Vector* vec, int where);
 

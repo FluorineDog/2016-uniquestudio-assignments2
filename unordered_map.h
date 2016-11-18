@@ -11,6 +11,7 @@ typedef double UNORDERED_MAP_TYPE;
 bool unordered_map_empty(Unordered_map* st);
 int unordered_map_size(Unordered_map* st);
 
+void unordered_map_init(Unordered_map* st);
 void unordered_map_clear(Unordered_map* st);
 
 void unordered_map_insert(Unordered_map* st, UNORDERED_MAP_KEY key, UNORDERED_MAP_TYPE value);

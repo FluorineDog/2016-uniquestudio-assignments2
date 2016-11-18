@@ -10,6 +10,7 @@ typedef struct Queue Queue;
 
 // functions 
 // note the absence of reference
+void queue_init(Queue* que);
 bool queue_empty(Queue* que);
 int queue_size(Queue* que);
 

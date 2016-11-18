@@ -12,6 +12,7 @@ typedef double SET_TYPE;
 bool set_empty(Set* st);
 int set_size(Set* st);
 
+void set_init(Set* st);
 void set_clear(Set* st);
 
 void set_insert(Set* st, SET_TYPE value);

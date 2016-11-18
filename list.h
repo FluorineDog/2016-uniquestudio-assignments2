@@ -13,11 +13,13 @@ LIST_TYPE* list_ptr_at(List* lis);
 bool list_empty(List* lis);
 int list_size(List* lis);
 
+void list_init(List* lis);
 void list_clear(List* lis);
 
 //      a, b, c, ...,m, where, n, ...
 // =>   a, b, c, ...,m, value, where, n, ...
-void list_insert(List* lis, int where, LIST_TYPE value);
+void list_insert(List* lis, ListIterator where, LIST_TYPE value);
+void list_erase(List* lis, ListIterator where);
 
 void list_push_back(List* lis, LIST_TYPE value);
 void list_pop_back(List* lis);
