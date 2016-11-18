@@ -1,42 +1,23 @@
 #include <stdbool.h>
 #include <stdlib.h>
-typedef double VECTOR_TYPE;
+typedef double PRIORITY_QUEUE_TYPE;
 // TIPS: re-define the above identifiers
 // in *.cpp file to make them shorter
-// e.g. typedef T = VECTOR_TYPE;
+// e.g. typedef T = PRIORITY_QUEUE_TYPE;
 // NOTE YOU CAN ONLY DO THAT IN *.cpp FILES
 
-typedef struct Vector Vector;
-typedef struct VectorIterator VectorIterator;
-// NOTE THAT C has no reference 
-// so just ensure the followings works
-
-/*
-vector->data[] 
-*/
+typedef struct Priority_queue Priority_queue;
 
 // functions 
 // note the absence of reference
-VECTOR_TYPE* vector_ptr_at(Vector* vec);
-bool vector_empty(Vector* vec);
-int vector_size(Vector* vec);
-int vector_capacity(Vector* vec);
+void priority_queue_init(Priority_queue* stk);
+bool priority_queue_empty(Priority_queue* stk);
+int priority_queue_size(Priority_queue* stk);
 
-void vector_reserve(Vector* vec, int new_cap);
-void vector_resize(Vector* vec, int new_size);
-void vector_shrink_to_fit(Vector* vec);
-void vector_clear(Vector* vec);
-// wasting time below
-// skip these 4 commented lines
-// VectorIterator vector_begin(Vector* vec);
-// VectorIterator vector_end(Vector* vec);
-// void increse(VectorIterator* pIter);
-// void decrease(VectorIterator* pIter);
+void priority_queue_clear(Priority_queue* stk);
 
+void priority_queue_push(Priority_queue* stk, PRIORITY_QUEUE_TYPE value);
+void priority_queue_pop(Priority_queue* stk);
+// return pointer to make it mutable is meaningless.
+PRIORITY_QUEUE_TYPE priority_queue_top(Priority_queue* stk);
 
-//      a, b, c, ...,m, where, n, ...
-// =>   a, b, c, ...,m, value, where, n, ...
-void vector_insert(Vector* vec, int where, VECTOR_TYPE value);
-
-void vector_push_back(Vector* vec, VECTOR_TYPE value);
-void vector_pop_back(Vector* vec);
