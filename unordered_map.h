@@ -15,7 +15,7 @@ void unordered_map_init(Unordered_map* st);
 void unordered_map_clear(Unordered_map* st);
 
 void unordered_map_insert(Unordered_map* st, UNORDERED_MAP_KEY key, UNORDERED_MAP_TYPE value);
-void unordered_map_earse(Unordered_map* st, UNORDERED_MAP_KEY key);
+void unordered_map_erase(Unordered_map* st, UNORDERED_MAP_KEY key);
 
 // return NULL if not found
 // otherwise return pointer to value 

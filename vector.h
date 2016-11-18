@@ -21,6 +21,7 @@ vector->data[]
 void vector_init(Vector* vec);
 void vector_clear(Vector* vec);
 VECTOR_TYPE* vector_ptr_at(Vector* vec);
+void vector_init(Vector* vec);
 bool vector_empty(Vector* vec);
 int vector_size(Vector* vec);
 int vector_capacity(Vector* vec);

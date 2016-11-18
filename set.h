@@ -16,7 +16,7 @@ void set_init(Set* st);
 void set_clear(Set* st);
 
 void set_insert(Set* st, SET_TYPE value);
-void set_earse(Set* st, SET_TYPE value);
+void set_erase(Set* st, SET_TYPE value);
 
 
 SetIterator set_begin(Set* st);
@@ -26,7 +26,7 @@ SetIterator set_lower_bound(Set* st, SET_TYPE value);
 SetIterator set_upper_bound(Set* st, SET_TYPE value);
 
 
-void SetIterator_self_increse(SetIterator* pIter);
+void SetIterator_self_increase(SetIterator* pIter);
 void SetIterator_self_decrease(SetIterator* pIter);
 
 // iterators is of the same location.

@@ -29,7 +29,7 @@ void list_pop_front(List* lis);
 
 ListIterator list_begin(List* lis);
 ListIterator list_end(List* lis);
-void ListIterator_self_increse(ListIterator* pIter);
+void ListIterator_self_increase(ListIterator* pIter);
 void ListIterator_self_decrease(ListIterator* pIter);
 
 ListIterator list_begin(List* lis);
